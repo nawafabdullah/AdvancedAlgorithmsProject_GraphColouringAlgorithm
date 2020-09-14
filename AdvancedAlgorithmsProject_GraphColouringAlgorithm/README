@@ -1,0 +1,69 @@
+GIT repository for csci422/Project
+
+/* The program reads in a graph, reduces it, and then asks the user for a number of colours,
+
+  then it return if the graph can be colorable with the provides number of colours or not
+
+  if the graph IS indeed colorable, the program also provides a sequence representing
+
+  the assignment of the colours to the vertices
+
+*/
+
+
+For this Project, I tried to implement my own backtracking algorithm. However, I found out that it is just a waste of time since
+
+there are few effecient algorithms out there that were implemented for people to use. 
+
+Thus, I researched some algorithms and found one I liked on stackoverfolow that was not implemented correctly 
+
+So, I fixed the code that was mentioned by Mr. Rahul Krishna 
+
+and I modified it to suit my needs. 
+
+To read the graph, I used the code we used in Labs 3 & 4 
+
+and again, I modified it to suit my needs. 
+
+The project reposotory contains few folders and the description and files included will be described below: 
+
+include -> This folder contains header file used by the program (.h)
+
+src -> This folder contains source file used by the program (.cpp) file 
+
+include -> This folder contains object file built by compailer and used by the program (.o)
+
+bin -> This folder contains executable program
+
+resources -> This folder contains the testing file used by the program (.txt) file that contains the description of the graph 
+
+resources -> also includes a coloured visualaization of the graph used by the program in both .docs and .pdf formats 
+
+Please note: you can run the program for the Project main folder by using the command 
+
+ 						bin/GraphColouring
+
+Notes:
+- I built the program to excute whether a command line argument was provided or not.
+- If a command line is to be passed, the program accept a file name that contains a graph relation to be tested
+   please make sure that the file to be tested is in the resource folder (the path has been already coded)
+
+   sample run for the program provided command line argument
+						bin/GraphColouring testing_graph.txt
+
+
+- please note that the program accepts a graph formatted the same way we did in our labs.
+
+  However, please make sure to indicate relations both ways
+
+  For example, 2
+  	       0 1 2
+	       1 0 2
+	       2
+
+  note that when identifying connected vertices to vertex 0 (i.e vertex 1)
+
+  We also identified the same relation again when identifying  vertex 1's connected vertices
+
+
+  * if I have more time, I want to also implement a solution to the graph optimization problem by adding few testing loops  
